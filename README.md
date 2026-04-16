@@ -1,13 +1,12 @@
-# 🎭 Sentiment Analyzer — NLP Project 1
+# Sentiment Analyzer NLP Final Project 
 
-> **Course:** Natural Language Processing | Dr. Priyamvada Tripathi  
-> **Difficulty:** Beginner | **Timeline:** 1 week
+> **Course:** Natural Language Processing
 
 Classifies any text as **POSITIVE**, **NEGATIVE**, or **NEUTRAL** using a pre-trained DistilBERT transformer model from HuggingFace. No training required — just a clean inference pipeline.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install dependencies
 
@@ -44,7 +43,7 @@ python app.py
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 sentiment_analyzer/
@@ -58,7 +57,7 @@ sentiment_analyzer/
 
 ---
 
-## 🧠 Model
+## Model
 
 | Detail       | Value |
 |-------------|-------|
@@ -72,7 +71,7 @@ The model is downloaded automatically on first run and cached locally.
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 
 The `test_examples.csv` file contains 50 hand-labeled examples:
 - 15 clearly POSITIVE (movie reviews & product listings)
@@ -94,7 +93,7 @@ This generates `results.csv` with columns:
 
 ---
 
-## 🎯 Neutral Handling
+## Neutral Handling
 
 DistilBERT SST-2 is a binary classifier (POSITIVE/NEGATIVE). Neutral is derived from confidence:
 
