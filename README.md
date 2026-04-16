@@ -2,7 +2,7 @@
 
 > **Course:** Natural Language Processing
 
-Classifies any text as **POSITIVE**, **NEGATIVE**, or **NEUTRAL** using a pre-trained DistilBERT transformer model from HuggingFace. No training required — just a clean inference pipeline.
+Classifies any text as **POSITIVE**, **NEGATIVE**, or **NEUTRAL** using a pre-trained DistilBERT transformer model from HuggingFace. No training required, just a clean inference pipeline.
 
 ---
 
@@ -102,7 +102,7 @@ DistilBERT SST-2 is a binary classifier (POSITIVE/NEGATIVE). Neutral is derived 
 
 ---
 
-## 🔗 Resources
+## Resources
 
 - [HuggingFace Pipelines Docs](https://huggingface.co/docs/transformers/main_classes/pipelines)
 - [distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english)
