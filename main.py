@@ -1,6 +1,5 @@
 """
-Sentiment Analyzer — Project 1
-NLP Course | Dr. Priyamvada Tripathi
+Sentiment Analyzer — Final Project 
 
 Uses HuggingFace's distilbert-base-uncased-finetuned-sst-2-english pipeline
 to classify text as POSITIVE or NEGATIVE with a confidence score.
@@ -11,7 +10,7 @@ import csv
 import argparse
 from transformers import pipeline
 
-# ── Model ──────────────────────────────────────────────────────────────────────
+# Model
 
 def load_model():
     """Load the HuggingFace sentiment-analysis pipeline (cached after first run)."""
@@ -24,7 +23,7 @@ def load_model():
     return clf
 
 
-# ── Core function ──────────────────────────────────────────────────────────────
+# Core function
 
 def analyze(clf, text: str) -> dict:
     """
@@ -55,7 +54,7 @@ def analyze_batch(clf, texts: list[str]) -> list[dict]:
     return [analyze(clf, t) for t in texts]
 
 
-# ── CLI mode ───────────────────────────────────────────────────────────────────
+# CLI mode
 
 def run_interactive(clf):
     """REPL: type text, get sentiment, repeat."""
@@ -78,7 +77,7 @@ def run_interactive(clf):
         print(f"  {emoji}  {r['label']}  (confidence: {r['score']:.2%})")
 
 
-# ── Evaluation mode ────────────────────────────────────────────────────────────
+# Evaluation mode
 
 def evaluate(clf, csv_path: str):
     """
@@ -118,7 +117,7 @@ def evaluate(clf, csv_path: str):
     print(f"Results saved → {out_path}")
 
 
-# ── Entry point ────────────────────────────────────────────────────────────────
+# Entry point
 
 def main():
     parser = argparse.ArgumentParser(
